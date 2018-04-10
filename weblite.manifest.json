@@ -6,5 +6,7 @@
   "shareDB": false,
   "width": 120,
   "height": 120,
-  "customizeArray": []
+  "customizeArray": [
+    { "type": "text", "name": "choices", "title": "text", "description": "text" }
+  ]
 }
