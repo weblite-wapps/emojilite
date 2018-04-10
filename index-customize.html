@@ -10,69 +10,86 @@
   <body>
     <div class="customize-title">choose emoji</div>
 
-    <div class="emoji-button">
-      <div class="emoji emoji--like">
-        <div class="emoji__hand">
-            <div class="emoji__thumb"></div>
+    <div id="emojis">
+      <div class="emoji-button" data-select="0">
+        <div class="emoji emoji--like">
+          <div class="emoji__hand">
+              <div class="emoji__thumb"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="emoji-button">
-      <div class="emoji emoji--love">
-        <div class="emoji__heart"></div>
+      <div class="emoji-button" data-select="1">
+        <div class="emoji emoji--love">
+          <div class="emoji__heart"></div>
+        </div>
       </div>
-    </div>
 
-    <div class="emoji-button">
-      <div class="emoji emoji--haha">
-        <div class="emoji__face">
-          <div class="emoji__eyes"></div>
-          <div class="emoji__mouth">
-            <div class="emoji__tongue"></div>
+      <div class="emoji-button" data-select="2">
+        <div class="emoji emoji--haha">
+          <div class="emoji__face">
+            <div class="emoji__eyes"></div>
+            <div class="emoji__mouth">
+              <div class="emoji__tongue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="emoji-button" data-select="3">
+        <div class="emoji emoji--yay">
+          <div class="emoji__face">
+            <div class="emoji__eyebrows"></div>
+            <div class="emoji__mouth"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="emoji-button" data-select="4">
+        <div class="emoji emoji--wow">
+          <div class="emoji__face">
+            <div class="emoji__eyebrows"></div>
+            <div class="emoji__eyes"></div>
+            <div class="emoji__mouth"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="emoji-button" data-select="5">
+        <div class="emoji emoji--sad">
+          <div class="emoji__face">
+            <div class="emoji__eyebrows"></div>
+            <div class="emoji__eyes"></div>
+            <div class="emoji__mouth"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="emoji-button" data-select="6">
+        <div class="emoji emoji--angry">
+          <div class="emoji__face">
+            <div class="emoji__eyebrows"></div>
+            <div class="emoji__eyes"></div>
+            <div class="emoji__mouth"></div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="emoji-button">
-      <div class="emoji emoji--yay">
-        <div class="emoji__face">
-          <div class="emoji__eyebrows"></div>
-          <div class="emoji__mouth"></div>
-        </div>
-      </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" charset="utf-8"></script>
+    <script>
+      let selection = 0;
 
-    <div class="emoji-button">
-      <div class="emoji emoji--wow">
-        <div class="emoji__face">
-          <div class="emoji__eyebrows"></div>
-          <div class="emoji__eyes"></div>
-          <div class="emoji__mouth"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="emoji-button">
-      <div class="emoji emoji--sad">
-        <div class="emoji__face">
-          <div class="emoji__eyebrows"></div>
-          <div class="emoji__eyes"></div>
-          <div class="emoji__mouth"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="emoji-button">
-      <div class="emoji emoji--angry">
-        <div class="emoji__face">
-          <div class="emoji__eyebrows"></div>
-          <div class="emoji__eyes"></div>
-          <div class="emoji__mouth"></div>
-        </div>
-      </div>
-    </div>
-
+      window.onload = function() {
+        $('#emojis').on("click", ".emoji-button", function(e) {
+          selection = $(this)
+            .addClass('emoji-selected')
+            .siblings()
+            .removeClass('emoji-selected')
+            .end()
+            .data('select')
+        })
+      }
+    </script>
   </body>
 </html>
