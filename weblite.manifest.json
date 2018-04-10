@@ -1,0 +1,10 @@
+{
+  "name": "facebook-emoji",
+  "instancable": true,
+  "creator": false,
+  "inline": true,
+  "shareDB": false,
+  "width": 170,
+  "height": 170,
+  "customizeArray": []
+}
