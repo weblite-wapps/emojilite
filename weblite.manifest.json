@@ -9,7 +9,7 @@
   "customizeArray": [{
     "type": "text",
     "name": "choices",
-    "title": "text",
+    "title": "emoji",
     "detail": { "text": "Pick your favorite emoji." }
   }]
 }
