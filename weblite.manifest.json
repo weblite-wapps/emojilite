@@ -6,7 +6,10 @@
   "shareDB": false,
   "width": 130,
   "height": 130,
-  "customizeArray": [
-    { "type": "text", "name": "choices", "title": "text", "description": "text" }
-  ]
+  "customizeArray": [{
+    "type": "text",
+    "name": "choices",
+    "title": "text",
+    "detail": { "text": "Pick your favorite emoji." }
+  }]
 }
