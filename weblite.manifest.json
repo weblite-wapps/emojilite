@@ -1,5 +1,6 @@
 {
   "name": "facebook-emoji",
+  "id": "5af6c9883237ff65d366bdec",
   "instancable": true,
   "creator": false,
   "inline": true,
@@ -11,5 +12,9 @@
     "name": "choices",
     "title": "emoji",
     "detail": { "text": "Pick your favorite emoji." }
-  }]
+  }],
+  "servIndexes": {
+    "inline": "index",
+    "main": "index"
+  }
 }
