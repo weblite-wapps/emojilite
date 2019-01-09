@@ -1,18 +1,20 @@
 {
-  "name": "facebook-emoji",
-  "id": "5afd6a79d17ae32f9743a992",
+  "name": "emojilite",
+  "id": "5c35a11a8361c04c7a75e6e3",
+  "searchable": true,
   "instancable": true,
   "creator": false,
   "inline": true,
-  "shareDB": false,
   "width": 130,
   "height": 130,
-  "customizeArray": [{
-    "type": "text",
-    "name": "choices",
-    "title": "emoji",
-    "detail": { "text": "Pick your favorite emoji." }
-  }],
+  "customizeArray": [
+    {
+      "type": "text",
+      "name": "choices",
+      "title": "emoji",
+      "detail": { "text": "Pick your favorite emoji." }
+    }
+  ],
   "servIndexes": {
     "inline": "index",
     "main": "index"

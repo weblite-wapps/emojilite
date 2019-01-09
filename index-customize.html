@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>facebook-emoji</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
       .emoji-button {
         position: relative;
@@ -25,11 +25,11 @@
       }
 
       .emoji-selected {
-        background: #E0E0E0;
+        background: #e0e0e0;
       }
 
       .emoji-button:hover {
-        background: #E0E0E0;
+        background: #e0e0e0;
       }
     </style>
   </head>
@@ -39,9 +39,7 @@
         <div class="emoji emoji--haha">
           <div class="emoji__face">
             <div class="emoji__eyes"></div>
-            <div class="emoji__mouth">
-              <div class="emoji__tongue"></div>
-            </div>
+            <div class="emoji__mouth"><div class="emoji__tongue"></div></div>
           </div>
         </div>
       </div>
@@ -87,26 +85,27 @@
 
       <div class="emoji-button" data-select="6">
         <div class="emoji emoji--like">
-          <div class="emoji__hand">
-              <div class="emoji__thumb"></div>
-          </div>
+          <div class="emoji__hand"><div class="emoji__thumb"></div></div>
         </div>
       </div>
 
       <div class="emoji-button" data-select="7">
-        <div class="emoji emoji--love">
-          <div class="emoji__heart"></div>
-        </div>
+        <div class="emoji emoji--love"><div class="emoji__heart"></div></div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/ramda@0.25/dist/ramda.js"></script>
-    <script src="https://weblite.me:3000/code/wappLibs/core" charset="utf-8"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" charset="utf-8"></script>
+    <script
+      src="https://weblite.me:3000/code/wappLibs/core"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      charset="utf-8"
+    ></script>
     <script>
       W.start()
 
-      let selection = 1;
+      let selection = 1
       const emoji = $('.emoji')
 
       window.onload = function() {
@@ -120,7 +119,9 @@
         })
       }
 
-      W.changeCustomize(function() { return { selection: selection } })
+      W.changeCustomize(function() {
+        return { selection: selection }
+      })
     </script>
   </body>
 </html>
